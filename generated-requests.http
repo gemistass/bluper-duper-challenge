@@ -1,0 +1,32 @@
+
+
+###
+GET http://localhost:8080/api/homes/
+
+<> 2021-09-03T014113.200.json
+<> 2021-09-03T014048.200.json
+<> 2021-09-03T013845.200.json
+<> 2021-09-03T013500.200.json
+<> 2021-09-03T013229.200.json
+
+###
+GET http://localhost:8080/api/homes/61314d65f8acd47fa458631f
+
+<> 2021-09-03T014104.500.json
+<> 2021-09-03T013904.200.json
+<> 2021-09-03T013542.200.json
+
+###
+DELETE http://localhost:8080/api/homes/61314d65f8acd47fa458631f
+
+###
+GET http://localhost:8080/api/homes/123
+###
+GET http://localhost:8080/api/sensors
+###
+POST 192.168.233.1:8080/api/sensors
+Content-Type: application/json
+
+{"hardwareVersion":"hv2", "softwareVersion": "sv2"}
+
+###
