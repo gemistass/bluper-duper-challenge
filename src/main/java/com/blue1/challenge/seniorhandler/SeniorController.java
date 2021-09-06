@@ -88,7 +88,7 @@ public class SeniorController {
             return ResponseEntity.badRequest().body("" +
                     " {\"status\":400,\"error\":\"Bad Request. Home not Found\"}");
         }
-        if ((newSenior == null))
+        if ((newSenior.getSensorId() == null))
             return seniorRepository.save(newSenior);
         else
             return ResponseEntity.badRequest().body("" +
