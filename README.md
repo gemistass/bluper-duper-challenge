@@ -14,30 +14,30 @@
 	* -mvn test
 
 ## Available Endpoints
-GET
-/security/tokenplease
-/api/homes
-/api/homes/{homeId}
-/api/seniors
-/api/seniors/{seniorId}
-/api/sensors/
-/api/sensors/{sensorId}
+* GET
+		* /security/tokenplease
+		* /api/homes
+		* /api/homes/{homeId}
+		* /api/seniors
+		* /api/seniors/{seniorId}
+		* /api/sensors/
+		* /api/sensors/{sensorId}
 
-POST           
-/api/homes
-/api/seniors
-/api/sensors
+* POST           
+		* /api/homes
+		* /api/seniors
+		* /api/sensors
 
-DELETE
-/api/homes/{homeId}
-/api/seniors/{seniorId}
-/api/sensors/{sensorId}
+* DELETE
+		* /api/homes/{homeId}
+		* /api/seniors/{seniorId}
+		* /api/sensors/{sensorId}
 
-PUT
-/assign/{sensorId}/{seniorId}
+* PUT
+		* /assign/{sensorId}/{seniorId}
 
-
+### Some more resources
 API documentation [here](SimpleApiDocumentation.pdf).
 Simple manual [here](BackendChallengeSimpleManual.pdf).
 
-
+	
