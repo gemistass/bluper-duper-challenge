@@ -12,7 +12,7 @@ Spring-Boot application for storing MongoDB documents by REST API calls
 	* git clone https://github.com/gemistass/bluper-duper-challenge.git
 * Run with 
 	* -mvn spring-boot:run
-* In another instance you can hit 
+* When running, test with
 	* -mvn test
 
 ## Available Endpoints
