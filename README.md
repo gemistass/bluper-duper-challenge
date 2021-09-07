@@ -1,5 +1,7 @@
 # bluper-duper-challenge
 
+Spring-Boot application for storing MongoDB documents by REST API calls 
+
 ## How to use service
 
 
