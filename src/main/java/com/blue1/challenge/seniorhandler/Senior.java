@@ -3,10 +3,11 @@ package com.blue1.challenge.seniorhandler;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-
+import org.springframework.data.mongodb.core.mapping.Document;
 import javax.validation.constraints.NotBlank;
 
 @NoArgsConstructor
+@Document(collection = "seniors")
 public class Senior {
 
 

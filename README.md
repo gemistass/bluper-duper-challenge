@@ -40,6 +40,13 @@ Spring-Boot application for storing MongoDB documents by REST API calls
 * PUT  
 		/assign/{sensorId}/{seniorId}  
 
+## Mongo collections  
+
+* Run MongoDB Shell
+&nbsp;&nbsp;&nbsp;&nbsp;db.homes.find()  
+&nbsp;&nbsp;&nbsp;&nbsp;db.seniors.find()  
+&nbsp;&nbsp;&nbsp;&nbsp;db.sensors.find()  
+
 ### Some more resources
 API documentation [here](SimpleApiDocumentation.pdf).
 Simple manual [here](BackendChallengeSimpleManual.pdf).
