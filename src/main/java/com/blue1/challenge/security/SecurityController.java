@@ -49,10 +49,16 @@ public class SecurityController {
         httpservletResponse.addHeader("access_token", access_jwtToken);
 //        new ObjectMapper().writeValue(httpservletResponse.getOutputStream(), new HashMap<>().put("access_token",access_jwtToken));
 
+       
+        String body =   "{\n" +
+                "    \"status\": "+HttpStatus.CREATED+",\n" +
+                "    \"token\": \""+access_jwtToken+"\",\n" +
+                "    \"path\": \""+httpServletRequest.getServletPath().toString()+"\"\n" +
+                "}";
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
-                .body("Check headers!");
+                .body(body);
 
     }
 

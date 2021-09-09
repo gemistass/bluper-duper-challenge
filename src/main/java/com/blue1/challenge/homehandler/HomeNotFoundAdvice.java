@@ -13,6 +13,10 @@ public class HomeNotFoundAdvice {
   @ExceptionHandler(HomeNotFoundException.class)
   @ResponseStatus(HttpStatus.NOT_FOUND)
   String homeNotFoundHandler(HomeNotFoundException ex) {
-    return ex.getMessage();
+     String body =   "{\n" +
+            "    \"status\": "+HttpStatus.NOT_FOUND.value() +",\n" +
+            "    \"error\": \""+ex.getMessage()+"\",\n" +
+            "}";
+    return body;
   }
 }
