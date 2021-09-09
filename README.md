@@ -27,11 +27,11 @@ Spring-Boot application for storing MongoDB documents by REST API calls
 
 * POST  
 		/api/homes  
-			* ex: {"name":"Analipsi","type":"PRIVATE"}  
+			* e.g.: {"name":"Analipsi","type":"PRIVATE"}  
 		/api/seniors  
-			* ex: {"homeId":"6139cc8aa6060634c0964f34","name":"Eichiro Oda"}  
+			* e.g.: {"homeId":"6139cc8aa6060634c0964f34","name":"Eichiro Oda"}  
 		/api/sensors  
-			* ex: {"hardwareVersion":"v3.2","softwareVersion":"v2.3"}  
+			* e.g.: {"hardwareVersion":"v3.2","softwareVersion":"v2.3"}  
 * DELETE  
 		/api/homes/{homeId}  
 		/api/seniors/{seniorId}  
