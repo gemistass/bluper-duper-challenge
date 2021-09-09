@@ -1,5 +1,6 @@
 package com.blue1.challenge;
 
+
 import com.blue1.challenge.seniorhandler.Senior;
 import com.blue1.challenge.seniorhandler.SeniorRepository;
 import com.blue1.challenge.sensorHandler.Sensor;
@@ -12,7 +13,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventListener;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Configuration
 @SuppressWarnings({"all"})
@@ -78,4 +83,19 @@ class MongoValidationConfig {
     public ValidatingMongoEventListener validatingMongoEventListener(LocalValidatorFactoryBean factory) {
         return new ValidatingMongoEventListener(factory);
     }
+}
+
+@Component
+class RestConfig implements RepositoryRestConfigurer {
+
+    @Override
+    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
+        config.exposeIdsFor(Home.class);
+        config.exposeIdsFor(Senior.class);
+        config.exposeIdsFor(Sensor.class);
+
+
+
+    }
+
 }
